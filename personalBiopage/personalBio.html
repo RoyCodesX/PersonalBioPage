@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Personal Bio Page</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <header>
+   <button id="theme-switch">
+      🌙
+    </button>
+    <h1>My Personal Bio Page</h1>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I am Sayantini Roy, a 2nd-year B.Tech student in Electrical Engineering at NIT Arunachal Pradesh.
+        I am deeply passionate about the intersection of technology and innovation, with a growing interest in
+        web development. I'm a passionate techie who enjoys coding and building functional and visually appealing applications.
+      </p>
+    </section>
+
+    <section id="skills">
+      <h2>My Skills</h2>
+      <ul>
+        <li>C</li>
+        <li>C++</li>
+        <li>Java</li>
+        <li>JavaScript</li>
+        <li>HTML/CSS</li>
+      </ul>
+    </section>
+  </main>
+ <script>
+    const btn = document.getElementById('theme-switch');
+    btn.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+      btn.textContent = document.body.classList.contains('dark-mode') ? '☀️' : '🌙';
+    });
+  </script>
+</body>
+</html>
